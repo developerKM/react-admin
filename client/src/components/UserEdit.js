@@ -1,5 +1,5 @@
 import React from 'react'
-import { Edit, SimpleForm, TextInput } from 'react-admin'
+import { Edit, SimpleForm, TextInput,DateInput } from 'react-admin'
 
 const UserEdit = (props) => {
   return (
@@ -7,7 +7,9 @@ const UserEdit = (props) => {
       <SimpleForm>
         <TextInput disabled source='id' />
         <TextInput source='name' />
-        <TextInput source='email' />
+        <TextInput source='number' />
+        <TextInput source='text1' />
+        <DateInput label='Published' source='publishedAt' />
       </SimpleForm>
     </Edit>
   )
